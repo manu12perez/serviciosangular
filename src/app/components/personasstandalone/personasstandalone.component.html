@@ -1,0 +1,30 @@
+<div>
+    <h1>Personas Api</h1>
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Edad</th>
+            </tr>
+        </thead>+
+        <tbody>
+            <tr *ngFor="let pers of personas">
+                <td>{{pers.Nombre}}</td>
+                <td>{{pers.Email}}</td>
+                <td>{{pers.Edad}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <h1>Personas</h1>
+    <ul class="list-group">
+        @for (persona of personas; track persona){
+        <li class="list-group-item">
+            {{persona.Nombre}}
+        </li>
+        }
+    </ul>
+</div>

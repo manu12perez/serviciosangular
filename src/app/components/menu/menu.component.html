@@ -1,13 +1,52 @@
-<div>
-    <ul id="menu">
-        <li>
-            <a [routerLink]="['/']">Home</a> | 
-        </li>
-        <li>
-            <a [routerLink]="['/libreria']">Librería</a> | 
-        </li>
-        <li>
-            <a [routerLink]="['/personas']">Personas</a> | 
-        </li>
-    </ul>
-</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" [routerLink]="['/']"><img src="https://www.pngrepo.com/png/303230/512/angular-icon-logo.png"
+            style="height: 40px; width: 40px;" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a [routerLink]="['/']" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/libreria']" class="nav-link">Comics</a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/personas']" class="nav-link">Personas</a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/personasstandalone']" class="nav-link">PersonasStandAlone</a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/coches']" class="nav-link">Coches</a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/plantillas']" class="nav-link">Plantilla Simple</a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/plantillasmultiple']" class="nav-link">Plantilla Multiple</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- 
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Dropdown
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Something else here</a>
+    </div>
+</li>
+<li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+</li> 
+-->

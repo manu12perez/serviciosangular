@@ -13,6 +13,12 @@ import { HomeComponent } from './components/home/home.component';
 import { HttpClientModule, provideHttpClient } from '@angular/common/http';
 import { ServicePersonas } from '../service/service.personas';
 import { PersonasapiComponent } from './components/personasapi/personasapi.component';
+import { PersonasstandaloneComponent } from './components/personasstandalone/personasstandalone.component';
+import { ServiceCohes } from '../service/service.coches';
+import { CochesComponent } from './components/coches/coches.component';
+import { PlantillafuncionsimpleComponent } from './components/plantillafuncionsimple/plantillafuncionsimple.component';
+import { ServicePlantillas } from '../service/service.plantillas';
+import { PlantillafuncionmultipleComponent } from './components/plantillafuncionmultiple/plantillafuncionmultiple.component';
 
 @NgModule({
   declarations: [
@@ -21,16 +27,20 @@ import { PersonasapiComponent } from './components/personasapi/personasapi.compo
     HomeComponent,
     MenuComponent,
     LibreriaComponent,
-    PersonasapiComponent
+    PersonasapiComponent,
+    CochesComponent,
+    PlantillafuncionsimpleComponent,
+    PlantillafuncionmultipleComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    
+    PersonasstandaloneComponent
+
   ],
-  providers: [ServiceComics, ServicePersonas, provideHttpClient()],
+  providers: [ServiceComics, ServicePersonas, provideHttpClient(), ServiceCohes, ServicePlantillas],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
